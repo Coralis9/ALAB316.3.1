@@ -47,7 +47,7 @@ menuLinks.forEach(link => {
 
 const topMenuLinks = topMenuEl.querySelectorAll('a');
 
-// Event Listener for Top Menu Clicks
+
 topMenuEl.addEventListener('click', (event) => {
   event.preventDefault();
 
@@ -55,10 +55,10 @@ topMenuEl.addEventListener('click', (event) => {
 
   const clickedLink = event.target;
   
-  // Remove active class from all links
+
   topMenuLinks.forEach(link => link.classList.remove('active'));
 
-  // If the clicked link is already active, reset the submenu
+
   if (clickedLink.classList.contains('active')) {
     clickedLink.classList.remove('active');
     subMenuEl.style.top = '0';
